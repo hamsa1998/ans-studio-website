@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANS Studio | Capturing Your Moments Beautifully</title>
+    <style>
+        /* CSS Variables for Soft, Elegant Theme */
+        :root {
+            --primary-color: #d4af37; /* Elegant Gold */
+            --bg-color: #faf9f6; /* Off-white/Pastel */
+            --text-dark: #333333;
+            --text-light: #ffffff;
+            --font-main: 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        /* General Reset & Typography */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: var(--font-main); background-color: var(--bg-color); color: var(--text-dark); line-height: 1.6; }
+        h1, h2, h3 { font-weight: 300; margin-bottom: 15px; }
+        a { text-decoration: none; color: inherit; }
+
+        /* Navigation */
+        nav { background: #fff; padding: 20px 50px; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+        .logo { font-size: 24px; font-weight: bold; letter-spacing: 2px; color: var(--primary-color); }
+        .nav-links { display: flex; gap: 20px; }
+        .nav-links a:hover { color: var(--primary-color); transition: 0.3s; }
+
+        /* Hero Section */
+        .hero { height: 80vh; background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1920&q=80') center/cover; display: flex; flex-direction: column; justify-content: center; align-items: center; color: var(--text-light); text-align: center; padding: 20px; }
+        .hero h1 { font-size: 3rem; letter-spacing: 1px; }
+        .btn { padding: 12px 30px; background-color: var(--primary-color); color: var(--text-light); border: none; border-radius: 5px; font-size: 16px; cursor: pointer; transition: 0.3s; margin-top: 20px; }
+        .btn:hover { background-color: #bfa133; }
+
+        /* Section Formatting */
+        section { padding: 80px 20px; max-width: 1200px; margin: 0 auto; text-align: center; }
+        section h2 { font-size: 2.5rem; color: var(--primary-color); margin-bottom: 40px; }
+
+        /* Services Grid */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
+        .card { background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: transform 0.3s; }
+        .card:hover { transform: translateY(-5px); }
+        .card img { width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 15px; }
+
+        /* Pricing Tables */
+        .pricing-container { text-align: left; background: #fff; padding: 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); margin-bottom: 30px;}
+        .pricing-container h3 { border-bottom: 2px solid var(--primary-color); padding-bottom: 10px; }
+        .price-list { list-style: none; margin-top: 15px; }
+        .price-list li { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #eee; }
+
+        /* Form */
+        form { max-width: 600px; margin: 0 auto; background: #fff; padding: 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); text-align: left; }
+        input, select, textarea { width: 100%; padding: 12px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 5px; font-family: var(--font-main); }
+        textarea { resize: vertical; height: 100px; }
+
+        /* Footer & Extra Features */
+        footer { background: #222; color: #fff; padding: 40px 20px; text-align: center; }
+        .whatsapp-btn { position: fixed; bottom: 20px; right: 20px; background-color: #25D366; color: white; padding: 15px 20px; border-radius: 50px; font-weight: bold; box-shadow: 0 4px 10px rgba(0,0,0,0.2); z-index: 1000; display: flex; align-items: center; gap: 10px; }
+        
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .nav-links { display: none; } /* Simple mobile hide for template */
+            .hero h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">ANS STUDIO</div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#about">About</a>
+            <a href="#booking">Book Now</a>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <h1>Capturing Your Moments Beautifully</h1>
+        <p style="font-size: 1.2rem; margin-top: 10px; max-width: 600px;">Professional photography capturing the heart of your most precious memories.</p>
+        <a href="#booking"><button class="btn">Book Your Shoot Today</button></a>
+    </section>
+
+    <section id="services">
+        <h2>Our Expertise</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Wedding Photography</h3>
+                <p>Timeless captures of your special day, from the quiet moments to the grand celebration.</p>
+            </div>
+            <div class="card">
+                <h3>Pre-wedding Shoot</h3>
+                <p>Romantic storytelling sessions before you say 'I do'.</p>
+            </div>
+            <div class="card">
+                <h3>Family Shoot</h3>
+                <p>Beautiful, candid moments capturing the bond of your family.</p>
+            </div>
+            <div class="card">
+                <h3>Baby & Kids Shoot</h3>
+                <p>Preserving the fleeting, magical moments of childhood.</p>
+            </div>
+            <div class="card">
+                <h3>Fashion / Portfolio</h3>
+                <p>Professional, high-end editorial and modeling portfolios.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing">
+        <h2>Transparent Pricing</h2>
+        
+        <div class="grid">
+            <div class="pricing-container">
+                <h3>A. Frames</h3>
+                <ul class="price-list">
+                    <li><span>Small Frame</span> <span>Enquire</span></li>
+                    <li><span>Medium Frame</span> <span>Enquire</span></li>
+                    <li><span>Large Frame</span> <span>Enquire</span></li>
+                </ul>
+            </div>
+
+            <div class="pricing-container">
+                <h3>B. Photo Sheets</h3>
+                <ul class="price-list">
+                    <li><span>Matte Sheet</span> <span>Enquire</span></li>
+                    <li><span>Glossy Sheet</span> <span>Enquire</span></li>
+                    <li><span>Premium Album Sheet</span> <span>Enquire</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="pricing-container">
+            <h3>C. Shoot Pricing & D. Packages</h3>
+            <ul class="price-list">
+                <li><strong>Basic Package (No Makeup/Costume)</strong> <span>Duration: 2 hrs | 50 Photos | Enquire</span></li>
+                <li><strong>Premium Package (No Makeup/Costume)</strong> <span>Duration: 4 hrs | 100 Photos | Enquire</span></li>
+                <li><strong>Basic Package (With Makeup & Costume)</strong> <span>Duration: 3 hrs | 50 Photos + Styling | Enquire</span></li>
+                <li><strong>Standard Package</strong> <span>Includes Editing & Premium Album | Enquire</span></li>
+                <li><strong>Premium Elite Package</strong> <span>Full-day | Makeup | Costume | Album | Video | Enquire</span></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="booking">
+        <h2>Book Your Session</h2>
+        <form action="#" method="POST">
+            <input type="text" name="name" placeholder="Your Full Name" required>
+            <input type="tel" name="phone" placeholder="Phone Number" required>
+            <input type="email" name="email" placeholder="Email Address" required>
+            <select name="shoot_type" required>
+                <option value="" disabled selected>Select Shoot Type</option>
+                <option value="wedding">Wedding Photography</option>
+                <option value="prewedding">Pre-wedding Shoot</option>
+                <option value="family">Family Shoot</option>
+                <option value="baby">Baby/Kids Shoot</option>
+                <option value="portfolio">Fashion/Portfolio</option>
+            </select>
+            <input type="date" name="date" required>
+            <textarea name="message" placeholder="Tell us a bit about what you are looking for..."></textarea>
+            <button type="submit" class="btn" style="width: 100%;">Submit Booking Request</button>
+        </form>
+    </section>
+
+    <footer id="contact">
+        <h2>ANS Studio</h2>
+        <p>123 Studio Lane, Creative District</p>
+        <p>Email: hello@ansstudio.com | Phone: +1 234 567 8900</p>
+        <p style="margin-top: 20px; font-size: 0.9rem; color: #aaa;">&copy; 2026 ANS Studio. All Rights Reserved.</p>
+    </footer>
+
+    <a href="https://wa.me/12345678900" class="whatsapp-btn" target="_blank">
+        Chat Now
+    </a>
+
+</body>
+</html>
